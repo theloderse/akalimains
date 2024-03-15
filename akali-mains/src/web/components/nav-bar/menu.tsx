@@ -3,7 +3,6 @@ import { AppBar,Typography } from '@mui/material'
 import Typewriter from "typewriter-effect";
 import {styled} from '@mui/material/styles'
 import AkaliGif from '../../images/akali.gif'
-import ThemeToggleButton from './theme-toggle';
 
 const StyledAppBar = styled(AppBar)(({theme}) => ({
     backgroundColor: theme.background.navBar,
@@ -29,26 +28,7 @@ const StyledTypography = styled(Typography)(({theme}) => ({
 export const NavBar = () => {
     return(
         <div>
-            <StyledAppBar>
-                <ImageContainer>
-                    <img src={AkaliGif} alt="Akali" />
-                </ImageContainer>
-                <StyledTypography>
-                    <Typewriter
-                    onInit={(typewriter) => {
-                    typewriter
-                        .typeString("Welcome to")
-                        .pauseFor(1000)
-                        .deleteAll()
-                        .typeString("Akali Mains")
-                        .start();
-                }}/>
-                </StyledTypography>
-                <ImageContainer style={{marginRight: "-60vh"}}>
-                    <img src={AkaliGif} alt="Akali" />
-                </ImageContainer>
-                <ThemeToggleButton></ThemeToggleButton>
-            </StyledAppBar>
+            
         </div>
     )
 }

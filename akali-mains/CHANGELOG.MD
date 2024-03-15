@@ -8,3 +8,5 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ## [Unreleased]
 ### Added
 - Initial repository commit with some bare bones ui.
+- Added basic light / dark themeing capabilities.
+- Added a search bar where you can search player, and it displays your last 20 matches with kills deaths and assists of the match

@@ -6,23 +6,50 @@ declare module '@mui/material/styles' {
       background: {
         default: string;
         navBar: string;
+        components: string;
       };
+      text: {
+        consoleText: string,
+        inputText: string,
+      }
     }
     // allow configuration using `createTheme`
     interface ThemeOptions {
         background?: {
             default?: string;
             navBar?: string;
+            components?: string;
       };
+      text?: {
+        consoleText?: string;
+        inputText?: string;
+      }
     }
   }
 
-  const theme = createTheme({
+  export const darkTheme = createTheme({
     background: {
-        default: 'black',
-        navBar: '#303030',
+        default: '#222224',
+        navBar: 'black',
+        components: '#454547'
     },
+    text: {
+      consoleText: 'green',
+      inputText: 'white'
+    }
   });
 
-  export default theme;
+  export const theme = createTheme({
+    background: {
+      default: '#F2F1EB',
+      navBar: '#AFC8AD',
+
+      components: '#EEE7DA'
+  },
+  text: {
+    consoleText: '#739178',
+    inputText: '#516654'
+  }
+  })
+
   
